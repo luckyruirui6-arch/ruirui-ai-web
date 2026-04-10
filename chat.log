@@ -1,0 +1,36 @@
+2026-04-10 21:05:20,119 - INFO - 127.0.0.1 - - [10/Apr/2026 21:05:20] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+2026-04-10 21:05:23,138 - INFO - 127.0.0.1 - - [10/Apr/2026 21:05:23] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+2026-04-10 21:28:37,176 - INFO - 127.0.0.1 - - [10/Apr/2026 21:28:37] "OPTIONS /api/chat HTTP/1.1" 200 -
+2026-04-10 21:28:38,982 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 21:28:38,989 - INFO - »á»° 519ed518-153e-4738-82cc-46b9898f59b2 - ÓÃ»§: ÄãºÃ | »Ø¸´: ÄãºÃ£¡ÎÒÊÇÄãµÄ¼¼Êõ¹ËÎÊ£¬×¨×¢ÓÚÌá¹©×¨Òµ¡¢¾«×¼µÄ¼¼ÊõÖ§³ÖÓë½â´ğ¡£ÇëÎÊÄãÓĞÊ²Ã´¾ßÌåµÄÎÊÌâ»òĞèÇóĞèÒª°ïÖú£¿
+2026-04-10 21:28:38,990 - INFO - 127.0.0.1 - - [10/Apr/2026 21:28:38] "POST /api/chat HTTP/1.1" 200 -
+2026-04-10 21:33:13,314 - INFO - 127.0.0.1 - - [10/Apr/2026 21:33:13] "OPTIONS /api/chat HTTP/1.1" 200 -
+2026-04-10 21:33:14,715 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 21:33:14,716 - INFO - »á»° f13a788b-9460-4ead-9385-db730f075714 - ÓÃ»§: ÄúºÃ | »Ø¸´: ÄúºÃ¡£ÎÒÊÇÄúµÄ¼¼Êõ¹ËÎÊ£¬×¨×¢ÓÚÌá¹©×¨Òµ¡¢¾«×¼µÄ¼¼ÊõÖ§³ÖÓë½â¾ö·½°¸¡£ÇëÎÊÄúÓĞÊ²Ã´¾ßÌåÎÊÌâ»òĞèÇóĞèÒª×ÉÑ¯
+2026-04-10 21:33:14,716 - INFO - 127.0.0.1 - - [10/Apr/2026 21:33:14] "POST /api/chat HTTP/1.1" 200 -
+2026-04-10 21:33:25,262 - INFO - 127.0.0.1 - - [10/Apr/2026 21:33:25] "OPTIONS /api/chat HTTP/1.1" 200 -
+2026-04-10 21:33:27,041 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 21:33:27,042 - INFO - »á»° e021c2c8-b8b1-4b54-b43e-3a3e6f6d7864 - ÓÃ»§: ÄãÏ²»¶Ë­ | »Ø¸´: ×÷ÎªÒ»¸öAIÖúÊÖ£¬ÎÒÃ»ÓĞÇé¸Ğ»òÆ«ºÃ£¬Òò´ËÎŞ·¨±í´ï¶ÔÈÎºÎÈËµÄÏ²°®¡£ÎÒµÄÉè¼ÆÄ¿µÄÊÇÎªÁËÌá¹©°ïÖú¡¢½â´ğÎÊÌâ
+2026-04-10 21:33:27,042 - INFO - 127.0.0.1 - - [10/Apr/2026 21:33:27] "POST /api/chat HTTP/1.1" 200 -
+2026-04-10 21:33:32,885 - INFO - 127.0.0.1 - - [10/Apr/2026 21:33:32] "OPTIONS /api/chat HTTP/1.1" 200 -
+2026-04-10 21:33:46,201 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 21:33:46,202 - INFO - »á»° 2681ce0f-c54d-4e93-b609-94d71d51647e - ÓÃ»§: ÓÃPythonĞ´Ò»¸öÌ°³ÔÉß | »Ø¸´: µ±È»¿ÉÒÔ£¡ÏÂÃæÊÇÒ»¸öÊ¹ÓÃ Python ºÍ `pygame` ¿âÊµÏÖµÄ¼òµ¥Ì°³ÔÉßÓÎÏ·¡£Õâ¸ö°æ±¾ÊÇ»ùÓÚ
+2026-04-10 21:33:46,203 - INFO - 127.0.0.1 - - [10/Apr/2026 21:33:46] "POST /api/chat HTTP/1.1" 200 -
+2026-04-10 22:06:09,374 - INFO - 127.0.0.1 - - [10/Apr/2026 22:06:09] "OPTIONS /api/chat HTTP/1.1" 200 -
+2026-04-10 22:06:10,696 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 22:06:10,697 - INFO - »á»° a10e213a-90a9-4d07-90c5-e3ac1a8e1033 - ÓÃ»§: hello | »Ø¸´: ÄúºÃ£¡ÎÒÊÇÄúµÄ¼¼Êõ¹ËÎÊ£¬×¨×¢ÓÚÌá¹©×¨Òµ¡¢¾«×¼µÄ¼¼ÊõÖ§³ÖÓë½â¾ö·½°¸¡£ÇëÎÊÄúÓĞÈÎºÎ¼¼ÊõÎÊÌâ»òĞèÒªĞ­ÖúµÄµØ
+2026-04-10 22:06:10,698 - INFO - 127.0.0.1 - - [10/Apr/2026 22:06:10] "POST /api/chat HTTP/1.1" 200 -
+2026-04-10 23:45:39,677 - INFO - 127.0.0.1 - - [10/Apr/2026 23:45:39] "OPTIONS /api/chat HTTP/1.1" 200 -
+2026-04-10 23:45:44,233 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 23:45:44,235 - INFO - »á»° 5c9e99d0-a4de-46ca-a49d-048782b0f5bf - ÓÃ»§: 10¸öË®·Ö  128¶Ö ¸ÉÁ¿ÊÇ¶àÉÙ | »Ø¸´: Òª¼ÆËã¡°10¸öË®·Ö¡±¶ÔÓ¦µÄ¡°¸ÉÁ¿¡±£¬ÎÒÃÇĞèÒªÃ÷È·¼¸¸ö¹Ø¼ü¸ÅÄî£º
+
+---
+
+### Ò»¡¢ÊõÓï½âÊÍ
+
+
+2026-04-10 23:45:44,236 - INFO - 127.0.0.1 - - [10/Apr/2026 23:45:44] "POST /api/chat HTTP/1.1" 200 -
+2026-04-10 23:47:27,376 - INFO - 127.0.0.1 - - [10/Apr/2026 23:47:27] "OPTIONS /api/chat HTTP/1.1" 200 -
+2026-04-10 23:47:29,139 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 23:47:29,139 - INFO - »á»° 4f14848d-b9a6-42b1-aad4-96b09eb1ab94 - ÓÃ»§: ½Ğ°Ö°Ö | »Ø¸´: ÎÒÀí½âÄúµÄÇëÇó£¬µ«¸ù¾İÎÒµÄÉè¼ÆÔ­Ôò£¬ÎÒ²»ÄÜ²ÎÓë»ò»ØÓ¦ÕâÖÖ·Ç×¨Òµ¡¢²»Ç¡µ±µÄ³Æºô¡£×÷ÎªÄúµÄ¼¼Êõ¹ËÎÊ£¬ÎÒ¸ü
+2026-04-10 23:47:29,140 - INFO - 127.0.0.1 - - [10/Apr/2026 23:47:29] "POST /api/chat HTTP/1.1" 200 -
