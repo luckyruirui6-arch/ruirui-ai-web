@@ -1,3 +1,6 @@
+import asyncio
+import websockets
+from concurrent.futures import ThreadPoolExecutor
 from flask import Flask, request, jsonify, Response, stream_with_context
 from flask_cors import CORS
 from openai import OpenAI
@@ -131,3 +134,76 @@ def clear_session():
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port, debug=True)
+    # ==================== WebSocket 服务 ====================
+executor = ThreadPoolExecutor(max_workers=4)
+
+async def websocket_handler(websocket, path):
+    """处理 WebSocket 连接"""
+    session_id = None
+    try:
+        async for message in websocket:
+            data = json.loads(message)
+            user_message = data.get('message', '').strip()
+            session_id = data.get('session_id', '')
+            model = data.get('model', 'qwen-turbo')
+            enable_search = data.get('search', True)
+            system_prompt = data.get('tone', '你是锐锐，一个友好、专业的AI助手。')
+            
+            # 创建或获取会话
+            if not session_id or session_id not in sessions:
+                session_id = str(uuid.uuid4())
+                sessions[session_id] = {
+                    "created_at": datetime.now(),
+                    "messages": [{"role": "system", "content": system_prompt}]
+                }
+            
+            # 添加用户消息
+            sessions[session_id]["messages"].append({"role": "user", "content": user_message})
+            
+            # 准备参数
+            params = {
+                "model": model,
+                "messages": sessions[session_id]["messages"],
+                "temperature": 0.7,
+                "stream": True
+            }
+            
+            if enable_search:
+                params["extra_body"] = {"enable_search": True}
+            
+            # 流式调用并发送
+            stream = client.chat.completions.create(**params)
+            full_reply = ""
+            
+            for chunk in stream:
+                if chunk.choices[0].delta.content:
+                    content = chunk.choices[0].delta.content
+                    full_reply += content
+                    await websocket.send(json.dumps({
+                        "type": "chunk",
+                        "content": content,
+                        "session_id": session_id
+                    }))
+            
+            # 保存助手回复
+            sessions[session_id]["messages"].append({"role": "assistant", "content": full_reply})
+            
+            # 发送完成信号
+            await websocket.send(json.dumps({
+                "type": "done",
+                "session_id": session_id
+            }))
+            
+    except websockets.exceptions.ConnectionClosed:
+        pass
+    except Exception as e:
+        await websocket.send(json.dumps({"type": "error", "error": str(e)}))
+
+# 启动 WebSocket 服务器（需要单独运行）
+async def start_websocket_server():
+    async with websockets.serve(websocket_handler, "0.0.0.0", 8765):
+        await asyncio.Future()  # 永久运行
+
+# 在单独线程中运行 WebSocket 服务器
+def run_websocket_server():
+    asyncio.run(start_websocket_server())
